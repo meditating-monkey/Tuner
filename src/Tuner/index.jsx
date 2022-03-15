@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Canvas from "./Canvas";
+import { ForwardArrow, BackwardArrow } from "../Assets";
 import "./Tuner.css";
 
 const Tuner = () => {
@@ -16,9 +17,13 @@ const Tuner = () => {
 				"--height": `${dimensions.height}px`,
 			}}
 		>
-			<button className="tuner__button">{"<"}</button>
+			<button className="tuner__button">
+				<BackwardArrow />
+			</button>
 			<Canvas dimensions={dimensions} />
-			<button className="tuner__button">{">"}</button>
+			<button className="tuner__button">
+				<ForwardArrow />
+			</button>
 		</div>
 	);
 };

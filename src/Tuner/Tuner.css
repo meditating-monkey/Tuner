@@ -1,11 +1,19 @@
 .tuner__wrapper {
 	display: flex;
-	background-color: grey;
+	background-color: rgb(225, 241, 255);
 	border-radius: 0.5em;
 	height: calc(var(--height));
 }
 
 .tuner__button {
+	border-color: transparent;
+	background-color: rgba(0, 0, 0, 0.048);
+}
+
+.tuner__button:active {
+	border-radius: 5px;
+	border-style: double;
+	border-color: wheat;
 }
 
 .tuner__canvas {
