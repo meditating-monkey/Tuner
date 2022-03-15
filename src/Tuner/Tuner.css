@@ -1,0 +1,13 @@
+.tuner__wrapper {
+	display: flex;
+	background-color: grey;
+	border-radius: 0.5em;
+	height: calc(var(--height));
+}
+
+.tuner__button {
+}
+
+.tuner__canvas {
+	flex-basis: var(--width);
+}
